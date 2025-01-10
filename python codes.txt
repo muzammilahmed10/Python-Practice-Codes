@@ -1,0 +1,37 @@
+def celsius_to_fahrenheit(celsius):
+    return (celsius * 9/5) + 32
+
+def fahrenheit_to_celsius(fahrenheit):
+    return (fahrenheit - 32) * 5/9
+
+def celsius_to_kelvin(celsius):
+    return celsius + 273.15
+
+celsius_temp = float(input().strip())
+
+fahrenheit_temp = celsius_to_fahrenheit(celsius_temp)
+kelvin_temp = celsius_to_kelvin(celsius_temp)
+
+print(f"Temperature in Fahrenheit: {fahrenheit_temp}")
+print(f"Temperature in Kelvin: {kelvin_temp}")
+
+
+
+
+def checkout_book(book_title, available_books):
+    if book_title in available_books:
+        available_books.remove(book_title)
+
+def return_book(book_title, available_books):
+    available_books.append(book_title)
+
+def view_books(available_books):
+    print("Available books:", available_books)
+
+available_books = ['Harry Potter', '1984', 'Pride and Prejudice']
+
+view_books(available_books)
+checkout_book('Harry Potter', available_books)
+view_books(available_books)
+return_book('Harry Potter', available_books)
+view_books(available_books)
