@@ -17,3 +17,10 @@ print(t3)
 tup = (10,)
 print(tup,type(tup))#(10,) <class 'tuple'>
 
+new_tup = (10,20,30,40)
+ele1 = new_tup[0]
+ele2 = new_tup[1]
+
+#Unpacking of Tuples
+ele1,ele2,ele3,ele4= new_tup
+print('Valeue ele1,ele2,ele3,ele4',ele1,ele2,ele3,ele4)
