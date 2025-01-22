@@ -1,0 +1,7 @@
+li = list(map(int,input().split()))
+set(li)
+list(li).sort()
+print('Second smallest',li[1])
+print('smallest',li[0])
+print('largest',li[-1])
+print('second largest',li[-2])

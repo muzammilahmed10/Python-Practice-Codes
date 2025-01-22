@@ -1,3 +1,4 @@
+#sort method won't return anything(None) so avoid doint li = li.sort()
 li = [10,5,3,20]
 li.sort()
 print(li) #[3, 5, 10, 20]
