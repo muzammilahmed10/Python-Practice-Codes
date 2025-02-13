@@ -15,3 +15,23 @@ gen = generator_function()
 print(next(gen))#10
 print(next(gen))#20
 print(next(gen))#30
+
+def fibonacci(n):
+    a,b = 0,1
+    for i in range(n):
+        print(a)
+        a,b = b,a+b
+fibonacci(10)
+
+def fibonacci_gen(n):
+    a,b = 0,1
+    for i in range(n):
+        yield a
+        a,b = b,a+b
+ref = fibonacci_gen(10)
+
+for i in range(5):
+    print(next(ref))
+
+
+#https://github.com/Priya9096/Python-Practice-Codes/tree/main/Solutions
